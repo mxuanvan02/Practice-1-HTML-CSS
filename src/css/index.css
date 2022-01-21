@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 1440px;
+  height: 6984px;
+
+  background: #FFFFFF;
+}
+
+
+
+/* ---------------------------------------------------------------------- *\
+                              #PAGE HEADER
+\* ---------------------------------------------------------------------- */
+
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 768px;
+  width: 1440px;
+
+  background: url("../images/header/Background.png");
+}
+
+
+.header-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 768px;
+  width: 1440px;
+
+  background: #000000;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+
+
+.nav-bar {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 67px;
+}
+
+
+.nav-logo {
+  position: absolute;
+  width: 40px;
+  height: 43px;
+  left: 150px;
+  color: #EBCB80;
+}
+
+
+.nav-items {
+  display: flex;
+  position: absolute;
+  left: 469px;
+  height: 22px;
+  width: 509px;
+}
+
+
+.nav-item-hotels,
+.nav-item-airlines,
+.nav-item-vacations,
+.nav-item-find-more {
+  position: absolute;
+  color: #FFFFFF;
+  width: 103px;
+  height: 22px;
+
+  font-family: Roboto;
+  font-style: normal;  
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.0555556em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.nav-item-hotels    { left: 0px;   }
+.nav-item-airlines  { left: 123px; }
+.nav-item-vacations { left: 256px; }
+.nav-item-find-more { left: 406px; }
+
+
+.nav-socials {
+  display: flex;
+  position: absolute;
+  left: 1126px;
+  height: 24px;
+  width: 165px;
+}
+
+
+.nav-socials-twiter,
+.nav-socials-facebook,
+.nav-socials-instagram {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #000000;
+}
+
+
+.nav-socials-twiter     { left: 0px; }
+.nav-socials-facebook   { left: 72.54px; }
+.nav-socials-instagram  { left: 141px; }
