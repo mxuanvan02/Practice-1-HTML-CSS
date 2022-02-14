@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+:root {
+  --bg-color: #fff;
+  --txt-color: #fff;
+}
 
 
 body {
   font-family: 'Roboto', sans-serif;
-  position: relative;
-  width: 1440px;
-  height: 6984px;
-
-  background: #FFFFFF;
+  background-color: var(--bg-color);
 }
 
 
@@ -19,37 +24,35 @@ body {
 
 header {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 768px;
   width: 1440px;
-
-  background: url("../images/header/Background.png");
+  background: url("../images/header/background.png");
 }
 
 
 .header-overlay {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 768px;
   width: 1440px;
-
-  background: #000000;
+  background: #000;
   opacity: 0.5;
   mix-blend-mode: normal;
 }
 
 
-.nav-bar {
+.header-nav {
   display: flex;
   align-items: flex-end;
   position: absolute;
-  top: 67px;
+  top: 100px;
 }
 
 
-.nav-logo {
+.header-logo {
   position: absolute;
   width: 40px;
   height: 43px;
@@ -58,12 +61,13 @@ header {
 }
 
 
-.nav-items {
+.nav-bar {
   display: flex;
   position: absolute;
   left: 469px;
   height: 22px;
   width: 509px;
+  padding-bottom: 10px;
 }
 
 
@@ -72,10 +76,9 @@ header {
 .nav-item-vacations,
 .nav-item-find-more {
   position: absolute;
-  color: #FFFFFF;
+  color: var(--txt-color);
   width: 103px;
   height: 22px;
-
   font-family: Roboto;
   font-style: normal;  
   font-weight: normal;
@@ -83,7 +86,7 @@ header {
   line-height: 21px;
   display: flex;
   align-items: flex-end;
-  letter-spacing: 0.0555556em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -95,7 +98,7 @@ header {
 .nav-item-find-more { left: 406px; }
 
 
-.nav-socials {
+.header-socials {
   display: flex;
   position: absolute;
   left: 1126px;
@@ -104,16 +107,67 @@ header {
 }
 
 
-.nav-socials-twiter,
-.nav-socials-facebook,
-.nav-socials-instagram {
+.social-twiter,
+.social-facebook,
+.social-instagram {
   position: absolute;
   width: 24px;
   height: 24px;
-  background: #000000;
+  background: #000;
 }
 
 
-.nav-socials-twiter     { left: 0px; }
-.nav-socials-facebook   { left: 72.54px; }
-.nav-socials-instagram  { left: 141px; }
+.social-twiter     { left: 0px; }
+.social-facebook   { left: 72.54px; }
+.social-instagram  { left: 141px; }
+
+
+.header-title {
+  position: absolute;
+  width: 620px;
+  height: 96px;
+  top: 163px;
+  left: 410px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--txt-color);
+  letter-spacing: -0.5px;
+}
+
+
+.header-video {
+  /* display: grid;
+  place-items: center; */
+  position: absolute;
+  width: 555px;
+  height: 324px;
+  left: 443px;
+  top: 312px;
+  background: url(../images/header/video-frame.png) no-repeat center;
+}
+
+
+.play-background {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 126px;
+  left: 241px;
+  background: url(../images/header/play-bg.png) no-repeat center;
+  opacity: 0.8;
+}
+
+
+.play-btn {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  top: 24px;
+  left: 30px;
+}
