@@ -6,7 +6,8 @@
 
 :root {
   --bg-color: #fff;
-  --txt-color: #fff;
+  --txt-color-white: #fff;
+  --txt-color-black: #4b4b4b;
 }
 
 
@@ -14,7 +15,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
 }
-
 
 
 /* ---------------------------------------------------------------------- *\
@@ -76,7 +76,7 @@ header {
 .nav-item-vacations,
 .nav-item-find-more {
   position: absolute;
-  color: var(--txt-color);
+  color: var(--txt-color-white);
   width: 103px;
   height: 22px;
   font-family: Roboto;
@@ -136,14 +136,12 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--txt-color);
+  color: var(--txt-color-white);
   letter-spacing: -0.5px;
 }
 
 
 .header-video {
-  /* display: grid;
-  place-items: center; */
   position: absolute;
   width: 555px;
   height: 324px;
@@ -170,4 +168,102 @@ header {
   height: 24px;
   top: 24px;
   left: 30px;
+}
+
+
+.header-down-arrow {
+  position: absolute;
+  width: 16px;
+  height: 6.67px;
+  left: 712px;
+  top: 723px;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION FEATURE
+\* ---------------------------------------------------------------------- */
+
+
+.features {
+  position: absolute;
+  width: 1440px;
+  height: 768px;
+  left: 0px;
+  top: 768px;
+  background: var(--bg-color);
+}
+
+
+.features-title {
+  text-align: center;
+  margin: 80px 526px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  color: var(--txt-color-black);
+}
+
+
+.features-title-name {
+  font-size: 44px;
+  margin: 0 100px;
+}
+
+
+.features-title-subtitle {
+  font-size: 18px;
+  margin: 32px 0 0 0;
+  text-transform: uppercase;
+}
+
+
+.features-content {
+  margin: 32px 72px 59px 162px;
+  display: flex;
+}
+
+
+.features-content-left {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.responsive-layout, 
+.pixel-perfect, 
+.organized-layers {
+  display: grid;
+  grid-template-columns: 60px 262px;
+}
+
+
+.responsive-layout-content,
+.pixel-perfect-content,
+.organized-layers-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.responsive-layout-content-title,
+.pixel-perfect-content-title,
+.organized-layers-content-title {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+
+.responsive-layout-content-description,
+.pixel-perfect-content-description,
+.organized-layers-content-description {
+  margin: 10px 10px 30px 10px;
+}
+
+
+.features-content-right {
+  background: url(../images/features/mac.png);
+  width: 802px;
+  height: 464px;
+  margin-left: 100px;
 }
