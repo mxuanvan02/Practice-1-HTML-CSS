@@ -7,7 +7,8 @@
 :root {
   --bg-color: #fff;
   --txt-color-white: #fff;
-  --txt-color-black: #4b4b4b;
+  --txt-color-black: #000;
+  --txt-color-cstom: #4b4b4b;
 }
 
 
@@ -201,7 +202,7 @@ header {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
-  color: var(--txt-color-black);
+  color: var(--txt-color-cstom);
 }
 
 
@@ -266,4 +267,61 @@ header {
   width: 802px;
   height: 464px;
   margin-left: 100px;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION DOWNLOAD
+\* ---------------------------------------------------------------------- */
+
+
+.download {
+  position: absolute;
+  width: 1440px;
+  height: 680px;
+  left: 0;
+  top: 1536px;
+  background: linear-gradient(0deg, #4b4b4b, #4b4b4b), url(../images/download/background.png);
+  background-blend-mode: soft-light, normal;
+}
+
+
+.download-content {
+  text-align: center;
+  color: var(--txt-color-white);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 163px;
+  margin-bottom: 45px;
+}
+
+
+.download-content-title {
+  font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+
+.download-content-description {
+  width: 555px;
+  margin: 0 auto;
+}
+
+
+.download-button {
+  width: 210px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background: #EBCB80;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+
+.download-button a {
+  text-transform: uppercase;
+  margin: 0 auto;
 }
