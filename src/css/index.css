@@ -5,16 +5,21 @@
 
 
 :root {
-  --bg-color: #fff;
-  --txt-color-white: #fff;
-  --txt-color-black: #000;
-  --txt-color-cstom: #4b4b4b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #4b4b4b;
+  --color-yellow: #EBCB80;
+}
+
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--bg-color);
+  background-color: var(--color-white);
 }
 
 
@@ -58,7 +63,7 @@ header {
   width: 40px;
   height: 43px;
   left: 150px;
-  color: #EBCB80;
+  color: var(--color-yellow);
 }
 
 
@@ -77,10 +82,9 @@ header {
 .nav-item-vacations,
 .nav-item-find-more {
   position: absolute;
-  color: var(--txt-color-white);
+  color: var(--color-white);
   width: 103px;
   height: 22px;
-  font-family: Roboto;
   font-style: normal;  
   font-weight: normal;
   font-size: 18px;
@@ -88,7 +92,6 @@ header {
   display: flex;
   align-items: flex-end;
   letter-spacing: 1px;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -129,7 +132,6 @@ header {
   height: 96px;
   top: 163px;
   left: 410px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 44px;
@@ -137,7 +139,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--txt-color-white);
+  color: var(--color-white);
   letter-spacing: -0.5px;
 }
 
@@ -192,17 +194,16 @@ header {
   height: 768px;
   left: 0px;
   top: 768px;
-  background: var(--bg-color);
+  background: var(--color-white);
 }
 
 
 .features-title {
   text-align: center;
   margin: 80px 526px;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
-  color: var(--txt-color-cstom);
+  color: var(--color-cstom);
 }
 
 
@@ -215,7 +216,6 @@ header {
 .features-title-subtitle {
   font-size: 18px;
   margin: 32px 0 0 0;
-  text-transform: uppercase;
 }
 
 
@@ -251,7 +251,6 @@ header {
 .pixel-perfect-content-title,
 .organized-layers-content-title {
   margin: 0 10px;
-  text-transform: uppercase;
 }
 
 
@@ -278,7 +277,7 @@ header {
 .download {
   position: absolute;
   width: 1440px;
-  height: 680px;
+  height: 588px;
   left: 0;
   top: 1536px;
   background: linear-gradient(0deg, #4b4b4b, #4b4b4b), url(../images/download/background.png);
@@ -288,8 +287,7 @@ header {
 
 .download-content {
   text-align: center;
-  color: var(--txt-color-white);
-  font-family: 'Roboto';
+  color: var(--color-white);
   font-style: normal;
   font-weight: normal;
   margin-top: 163px;
@@ -315,13 +313,11 @@ header {
   height: 48px;
   display: flex;
   align-items: center;
-  background: #EBCB80;
+  background: var(--color-yellow);
   margin: 0 auto;
   border-radius: 50px;
+  justify-content: center;
 }
 
 
-.download-button a {
-  text-transform: uppercase;
-  margin: 0 auto;
-}
+
