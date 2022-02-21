@@ -350,7 +350,7 @@ header {
 .pricing-title {
   display: flex;
   justify-content: center;
-  margin-top: 68px;
+  padding-top: 68px;
 }
 
 
@@ -363,6 +363,16 @@ header {
 .plan-item {
   width: 270px;
   height: 396px;
+  text-align: center;
+}
+
+
+.silver-plan {
+  background: var(--color-gray);
+  box-shadow: 0px 2px 4px 0px #00000080;
+  border-radius: 8px;
+  color: var(--color-white);
+  margin-right: 68px;
 }
 
 
@@ -375,32 +385,92 @@ header {
 }
 
 
-.silver-plan {
-  width: 270px;
-  height: 396px;
-  background: #4B4B4B;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+.gold-plan {
+  background: var(--color-yellow);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  
 }
 
 
-.gold-plan {}
+.gold-plan-overlay {
+  background: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
+  background-blend-mode: soft-light;
+  border-radius: 8px;
+  width: 270px;
+  height: 396px;
+}
 
 
-.platinum-plan {}
+.platinum-plan {
+  background: var(--color-gray);
+  box-shadow: 0px 2px 4px 0px #00000080;
+  border-radius: 8px;
+  color: var(--color-white);
+  margin-left: 68px;
+}
+
+
+.platinum-plan-overlay {
+  background: linear-gradient(223.49deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
+  background-blend-mode: multiply;
+  border-radius: 8px;
+  width: 270px;
+  height: 396px;
+}
 
 
 .plan-item-title {
   font-family: 'Lucida Grande';
   font-size: 18px;
   line-height: 27px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   margin-top: 0;
   padding-top: 40px;
+  color: var(--color-yellow);
 }
+
+
+.gold-plan .plan-item-title {
+  color: var(--color-black);
+}
+
+
+.plan-item-price {
+  font-size: 64px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.plan-item-price span {
+  font-size: 24px;
+  margin: 15px 10px 0 0;
+}
+
+
+.plan-item-description {
+  margin: 0;
+}
+
+
+.plan-item-purchase {
+  margin-top: 30px;
+  border-radius: 50px;
+  width: 198px;
+  height: 48px;
+  background: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+
+.gold-plan .plan-item-purchase {
+  color: var(--color-white);
+  background: var(--color-gray);
+  border-color: var(--color-gray);
+}
+
+
 
 
 
