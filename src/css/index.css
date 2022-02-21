@@ -28,6 +28,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-white);
+  margin: auto;
 }
 
 
@@ -37,21 +38,15 @@ body {
 
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 768px;
-  width: 1440px;
+  max-width: 1440px;
   background: url("../images/header/background.png");
 }
 
 
 .header-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 768px;
-  width: 1440px;
+  max-width: 1440px;
   background: var(--color-black);
   opacity: 0.5;
   mix-blend-mode: normal;
@@ -60,28 +55,22 @@ header {
 
 .header-nav {
   display: flex;
-  align-items: flex-end;
-  position: absolute;
-  top: 100px;
+  align-items: center;
+  padding-top: 48px;
 }
 
 
 .header-logo {
-  position: absolute;
   width: 40px;
   height: 43px;
-  left: 150px;
+  padding-left: 150px;
   color: var(--color-yellow);
 }
 
 
 .nav-bar {
   display: flex;
-  position: absolute;
-  left: 469px;
-  height: 22px;
-  width: 509px;
-  padding-bottom: 10px;
+  margin-left: 279px;
 }
 
 
@@ -89,61 +78,29 @@ header {
 .nav-item-airlines,
 .nav-item-vacations,
 .nav-item-find-more {
-  position: absolute;
   color: var(--color-white);
-  width: 103px;
-  height: 22px;
-  font-style: normal;  
-  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-right: 50px;
 }
-
-
-.nav-item-hotels    { left: 0px;   }
-.nav-item-airlines  { left: 123px; }
-.nav-item-vacations { left: 256px; }
-.nav-item-find-more { left: 406px; }
 
 
 .header-socials {
   display: flex;
-  position: absolute;
-  left: 1126px;
-  height: 24px;
-  width: 165px;
+  margin-left: 98px;
 }
 
 
 .social-twiter,
-.social-facebook,
-.social-instagram {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background: var(--color-black);
+.social-facebook {
+  margin-right: 44px;
 }
 
 
-.social-twiter     { left: 0px; }
-.social-facebook   { left: 72.54px; }
-.social-instagram  { left: 141px; }
-
-
 .header-title {
-  position: absolute;
-  width: 620px;
-  height: 96px;
-  top: 163px;
-  left: 410px;
-  font-style: normal;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
+  margin: 0 410px;
   text-align: center;
   color: var(--color-white);
   letter-spacing: -0.5px;
@@ -151,41 +108,36 @@ header {
 
 
 .header-video {
-  position: absolute;
-  width: 555px;
-  height: 324px;
-  left: 443px;
-  top: 312px;
+  display: flex;
+  align-items: center;
+  padding: 150px 270px;
   background: url(../images/header/video-frame.png) no-repeat center;
+  justify-content: center;
 }
 
 
 .play-background {
-  position: absolute;
   width: 72px;
   height: 72px;
-  top: 126px;
-  left: 241px;
   background: url(../images/header/play-bg.png) no-repeat center;
   opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .play-btn {
-  position: absolute;
   width: 18px;
   height: 24px;
-  top: 24px;
-  left: 30px;
 }
 
 
 .header-down-arrow {
-  position: absolute;
   width: 16px;
   height: 6.67px;
-  left: 712px;
-  top: 723px;
+  margin: auto;
+  margin-top: 52px;
 }
 
 
@@ -195,11 +147,8 @@ header {
 
 
 .features {
-  position: absolute;
-  width: 1440px;
+  max-width: 1440px;
   height: 768px;
-  left: 0px;
-  top: 768px;
   background: var(--color-white);
 }
 
@@ -207,8 +156,6 @@ header {
 .features-title {
   text-align: center;
   margin: 80px 526px;
-  font-style: normal;
-  font-weight: normal;
   color: var(--color-cstom);
 }
 
@@ -220,7 +167,7 @@ header {
 
 .features-title-subtitle {
   font-size: 18px;
-  margin: 32px 0 0 0;
+  margin-top: 32px;
 }
 
 
@@ -268,9 +215,9 @@ header {
 
 .features-content-right {
   background: url(../images/features/mac.png);
+  margin-left: 100px;
   width: 802px;
   height: 464px;
-  margin-left: 100px;
 }
 
 
@@ -280,11 +227,8 @@ header {
 
 
 .download {
-  position: absolute;
-  width: 1440px;
+  max-width: 1440px;
   height: 588px;
-  left: 0;
-  top: 1536px;
   background: linear-gradient(0deg, #4b4b4b, #4b4b4b), url(../images/download/background.png);
   background-blend-mode: soft-light, normal;
 }
@@ -295,8 +239,8 @@ header {
   color: var(--color-white);
   font-style: normal;
   font-weight: normal;
-  margin-top: 163px;
-  margin-bottom: 45px;
+  padding-top: 163px;
+  padding-bottom: 42px;
 }
 
 
@@ -327,25 +271,21 @@ header {
                               #SECTION TESTIMONIALS
 \* ---------------------------------------------------------------------- */
 .testimonials {
-  position: absolute;
-  width: 1440px;
+  max-width: 1440px;
   height: 876px;
-  left: 0;
-  top: 2124px;
   background: var(--color-white);
 }
 
 
 .testimonials-title {
-  margin: 72px 0 28px 0;
-  display: flex;
-  justify-content: center;
+  padding: 72px 0 28px 0;
+  text-align: center;
 }
 
 
 .testimonials-card {
   margin: 0 152px;
-  padding-bottom: 50px;
+  margin-bottom: 72px;
   display: grid;
   grid-template-columns: 55% 55%;
   grid-template-rows: 50% 50%;
@@ -401,11 +341,8 @@ header {
                               #SECTION PRICING
 \* ---------------------------------------------------------------------- */
 .pricing {
-  position: absolute;
-  top: 3000px;
-  width: 1440px;
+  max-width: 1440px;
   height: 680px;
-  left: 0;
   background: #f6f6f6;
 }
 
