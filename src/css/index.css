@@ -15,6 +15,8 @@
   --color-yellow: #EBCB80;
   --color-yellow-hover: #e4ba58;
   --color-gray-white: #f6f6f6;
+  --color-border-gray: #7d7d7d;
+  --color-map: #d8d8d8;
 }
 
 
@@ -31,7 +33,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--color-white);
-  margin: auto;
+  margin: 0;
+}
+
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 
@@ -41,8 +49,6 @@ body {
 
 
 header {
-  height: 768px;
-  max-width: 1440px;
   background: url("../images/header/background.png");
 }
 
@@ -150,8 +156,6 @@ header {
 
 
 .features {
-  max-width: 1440px;
-  height: 768px;
   background: var(--color-white);
 }
 
@@ -230,7 +234,6 @@ header {
 
 
 .download {
-  max-width: 1440px;
   height: 588px;
   background: linear-gradient(0deg, var(--color-black-gray), var(--color-black-gray)), url(../images/download/background.png);
   background-blend-mode: soft-light, normal;
@@ -273,13 +276,6 @@ header {
 /* ---------------------------------------------------------------------- *\
                               #SECTION TESTIMONIALS
 \* ---------------------------------------------------------------------- */
-
-
-.testimonials {
-  max-width: 1440px;
-  height: 876px;
-  background: var(--color-white);
-}
 
 
 .testimonials-title {
@@ -348,7 +344,6 @@ header {
 
 
 .pricing {
-  max-width: 1440px;
   height: 680px;
   background: var(--color-gray-white);
 }
@@ -497,7 +492,6 @@ header {
 
 
 .portfolio {
-  max-width: 1440px;
   height: 1476px;
   text-align: center;
 }
@@ -684,7 +678,6 @@ header {
 
 
 .team {
-  max-width: 1440px;
   height: 590px;
   background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png);
   background-blend-mode: multiply, normal;
@@ -742,4 +735,132 @@ header {
 
 .dot-active {
   background: var(--color-white);
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION CONTACT
+\* ---------------------------------------------------------------------- */
+
+
+.flex {
+  display: flex;
+}
+
+
+.contact {
+  max-width: 1440px;
+  height: 864px;
+  margin: 0 auto;
+}
+
+
+.contact-title {
+  text-align: center;
+  padding-top: 67px;
+}
+
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.contact-content-image {
+  background: url(../images/contact/iphoneapp.png) no-repeat;
+  width: 314px;
+  height: 485px;
+}
+
+
+.contact-content-form {
+  margin-top: 70px;
+}
+
+
+.form-name {
+  padding-right: 100px;
+  margin-right: 28px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--color-border-gray);
+}
+
+
+.form-email {
+  padding-right: 80px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--color-border-gray);
+}
+
+
+.form-message {
+  padding-right: 180px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--color-border-gray);
+  margin-top: 39px;
+  margin-bottom: 58px;
+}
+
+
+.form-submit {
+  text-align: center;
+  background: var(--color-yellow);
+  border: solid var(--color-yellow);
+  border-radius: 50px;
+  padding: 10px 60px;
+  margin: 0 65px;
+}
+
+
+.contact-content-information {
+  margin-right: 171px;
+  width: 250px;
+}
+
+
+.contact-content-information img {
+  margin-top: 18px;
+  margin-right: 15px;
+}
+
+
+.information-address {
+
+}
+
+
+.information-mail img {
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+
+.information-phone {}
+
+
+.information-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.contact-map {
+  background: var(--color-map);
+  padding: 201px 489px 129px 761px;
+}
+
+
+.tooltip {
+  background: url(../images/contact/tooltip.png) no-repeat;
+  width: 190px;
+  height: 82px;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 21px 16px 8px 29px;
+}
+
+
+.tooltip p {
+  margin: 0;
 }
