@@ -273,6 +273,13 @@ header {
 }
 
 
+.download-button:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: var(--color-yellow-hover);
+  border-color: var(--color-yellow-hover);
+}
+
+
 /* ---------------------------------------------------------------------- *\
                               #SECTION TESTIMONIALS
 \* ---------------------------------------------------------------------- */
@@ -750,7 +757,7 @@ header {
 
 .contact {
   max-width: 1440px;
-  height: 864px;
+  height: 864;
   margin: 0 auto;
 }
 
@@ -770,7 +777,7 @@ header {
 .contact-content-image {
   background: url(../images/contact/iphoneapp.png) no-repeat;
   width: 314px;
-  height: 485px;
+  height: 350px;
 }
 
 
@@ -813,6 +820,13 @@ header {
 }
 
 
+.form-submit:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: var(--color-yellow-hover);
+  border-color: var(--color-yellow-hover);
+}
+
+
 .contact-content-information {
   margin-right: 171px;
   width: 250px;
@@ -825,14 +839,17 @@ header {
 }
 
 
-.information-address {
-
-}
+.information-address {}
 
 
 .information-mail img {
-  margin-top: 22px;
+  margin-top: 6px;
   margin-right: 10px;
+}
+
+
+.information-mail a {
+  margin-top: 0;
 }
 
 
@@ -864,3 +881,83 @@ header {
 .tooltip p {
   margin: 0;
 }
+
+
+/* ---------------------------------------------------------------------- *\
+                              #FOOTER
+\* ---------------------------------------------------------------------- */
+
+
+footer {
+  height: 374px;
+  background: var(--color-black-gray);
+  color: var(--color-white);
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.footer-1 {
+  margin: 38px 316px 0 151px;
+  width: 262px;
+}
+
+
+.footer-1-title {
+  color: var(--color-yellow);
+  font-size: 36px;
+  margin: 0;
+  margin-left: 12px;
+}
+
+
+.subcribe {
+  display: flex;
+}
+
+
+.subcribe-email-form {
+  width: 211px;
+  height: 48px;
+  padding-left: 18px;
+  background: var(--color-black-gray);
+  border: 1px solid var(--color-border-gray);
+}
+
+
+.footer-2 {
+  margin-top: 69px;
+}
+
+
+.footer-2-follow-us {
+  margin-left: 235px;
+  width: 331px;
+}
+
+
+.footer-2-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer ul {
+  display: flex;
+}
+
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 121px;
+}
+
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
