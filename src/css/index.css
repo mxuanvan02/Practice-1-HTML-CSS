@@ -467,6 +467,7 @@ header {
 
 .plan-item-description {
   margin: 5px 0;
+  text-overflow: ellipsis;
 }
 
 
