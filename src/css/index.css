@@ -3,7 +3,8 @@
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
   font-family: 'Lucida Grande';
   src: url(../fonts/Lucida-Grande-Regular/Lucida-Grande-Regular.ttf);
-
+  font-weight: 400;
+  font-size: 16px;
 }
 
 
@@ -65,7 +66,9 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 48px;
+  padding-right: 150px;
 }
 
 
@@ -78,8 +81,8 @@ header {
 
 
 .nav-bar {
-  display: flex;
-  margin-left: 279px;
+  /* display: flex; */
+  margin-left: 209px;
 }
 
 
@@ -98,7 +101,6 @@ header {
 
 .header-socials {
   display: flex;
-  margin-left: 98px;
 }
 
 
@@ -157,12 +159,14 @@ header {
 
 .features {
   background: var(--color-white);
+  padding-top: 80px;
+  padding-bottom: 59px;
 }
 
 
 .features-title {
   text-align: center;
-  margin: 80px 526px;
+  /* margin: 80px 526px; */
   color: var(--color-cstom);
 }
 
@@ -217,6 +221,7 @@ header {
 .pixel-perfect-content-description,
 .organized-layers-content-description {
   margin: 10px 10px 30px 10px;
+  text-overflow: ellipsis;
 }
 
 
@@ -337,6 +342,7 @@ header {
 
 .testimonials-card-item-content-description {
   margin: 0 40px 24px 0;
+  text-overflow: ellipsis;
 }
 
 
@@ -398,6 +404,7 @@ header {
   background: var(--color-yellow);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  color: var(--color-black-gray);
 }
 
 
@@ -439,7 +446,7 @@ header {
 
 
 .gold-plan .plan-item-title {
-  color: var(--color-black);
+  color: var(--color-black-gray);
 }
 
 
@@ -459,7 +466,7 @@ header {
 
 
 .plan-item-description {
-  margin: 0;
+  margin: 5px 0;
 }
 
 
@@ -469,21 +476,21 @@ header {
   width: 198px;
   height: 48px;
   background: var(--color-yellow);
-  border-color: var(--color-yellow);
+  border: solid var(--color-yellow);
 }
 
 
 .plan-item-purchase:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   background: var(--color-yellow-hover);
-  border-color: var(--color-yellow-hover);
+  border: solid var(--color-yellow-hover);
 }
 
 
 .gold-plan .plan-item-purchase {
   color: var(--color-white);
   background: var(--color-black-gray);
-  border-color: var(--color-black-gray);
+  border: solid var(--color-black-gray);
 }
 
 
@@ -686,16 +693,16 @@ header {
 
 .team {
   height: 590px;
-  background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png);
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png) no-repeat;
   background-blend-mode: multiply, normal;
+  padding-right: 140px;
+  padding-left: 832px;
 }
 
 
 .team-content {
   display: flex;
   padding-top: 180px;
-  margin-left: 832px;
-  margin-right: 149px;
 }
 
 
@@ -782,7 +789,9 @@ header {
 
 
 .contact-content-form {
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -850,6 +859,7 @@ header {
 
 .information-mail a {
   margin-top: 0;
+  color: var(--color-black);
 }
 
 
