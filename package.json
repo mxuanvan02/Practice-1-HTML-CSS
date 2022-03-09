@@ -2,7 +2,7 @@
   "name": "practice-1-html-css",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open",
     "build": "parcel build"
   },
   "devDependencies": {
