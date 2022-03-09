@@ -11,7 +11,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-black-hover: rgb(55, 51, 51);
-  --color-gray: #4b4b4b;
+  --color-black-gray: #4b4b4b;
   --color-yellow: #EBCB80;
   --color-yellow-hover: #e4ba58;
   --color-gray-white: #f6f6f6;
@@ -232,7 +232,7 @@ header {
 .download {
   max-width: 1440px;
   height: 588px;
-  background: linear-gradient(0deg, var(--color-gray), var(--color-gray)), url(../images/download/background.png);
+  background: linear-gradient(0deg, var(--color-black-gray), var(--color-black-gray)), url(../images/download/background.png);
   background-blend-mode: soft-light, normal;
 }
 
@@ -273,6 +273,8 @@ header {
 /* ---------------------------------------------------------------------- *\
                               #SECTION TESTIMONIALS
 \* ---------------------------------------------------------------------- */
+
+
 .testimonials {
   max-width: 1440px;
   height: 876px;
@@ -343,6 +345,8 @@ header {
 /* ---------------------------------------------------------------------- *\
                               #SECTION PRICING
 \* ---------------------------------------------------------------------- */
+
+
 .pricing {
   max-width: 1440px;
   height: 680px;
@@ -371,7 +375,7 @@ header {
 
 
 .silver-plan {
-  background: var(--color-gray);
+  background: var(--color-black-gray);
   box-shadow: 0px 2px 4px 0px var(--color-black);
   border-radius: 8px;
   color: var(--color-white);
@@ -405,7 +409,7 @@ header {
 
 
 .platinum-plan {
-  background: var(--color-gray);
+  background: var(--color-black-gray);
   box-shadow: 0px 2px 4px 0px var(--color-black);
   border-radius: 8px;
   color: var(--color-white);
@@ -476,8 +480,8 @@ header {
 
 .gold-plan .plan-item-purchase {
   color: var(--color-white);
-  background: var(--color-gray);
-  border-color: var(--color-gray);
+  background: var(--color-black-gray);
+  border-color: var(--color-black-gray);
 }
 
 
@@ -487,8 +491,189 @@ header {
 }
 
 
+/* ---------------------------------------------------------------------- *\
+                              #SECTION PORTFOLIO
+\* ---------------------------------------------------------------------- */
+
+
+.portfolio {
+  max-width: 1440px;
+  height: 1476px;
+  text-align: center;
+}
+
+
+.portfolio-title {
+  font-size: 44px;
+  list-style: 48px;
+  color: var(--color-black-gray);
+  margin-top: 66px;
+  margin-bottom: 54px;
+}
+
+
+.project-card-1 {
+  grid-area: card-1;
+  background: url(../images/portfolio/project-card-1.png);
+}
+
+
+.project-card-2 {
+  grid-area: card-2;
+  background: url(../images/portfolio/project-card-2.png);
+  text-align: left;
+  color: var(--color-white);
+  padding: 58px 40px 50px 420px;
+}
+
+
+.card-2-title {
+  font-size: 32px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+.card-2-time {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-left: 2px;
+}
+
+
+.card-2-description {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 
 
 
+.card-2-status {
+  margin-left: 6px;
+  margin-top: 0;
+}
 
+
+.card-2-status span {
+  margin-right: 30px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+
+.card-2-status img {
+  padding-right: 6px;
+}
+
+
+.project-card-3 {
+  grid-area: card-3;
+  background: url(../images/portfolio/project-card-3.png);
+}
+
+
+.project-card-4 {
+  grid-area: card-4;
+  background: url(../images/portfolio/project-card-4.png);
+}
+
+
+.project-card-5 {
+  grid-area: card-5;
+  background: url(../images/portfolio/project-card-5.png);
+}
+
+
+.project-card-6 {
+  grid-area: card-6;
+  background: url(../images/portfolio/project-card-6.png);
+  text-align: left;
+  padding: 60px 51px 40px;
+  color: var(--color-black-gray);
+}
+
+
+.card-6-photo {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+
+.card-6-author {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-left: 2px;
+}
+
+
+.card-6-title {
+  font-size: 64px;
+  line-height: 54px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+
+.project-card-7 {
+  grid-area: card-7;
+  background: url(../images/portfolio/project-card-7.png);
+}
+
+
+.portfolio-content-wrap {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+  'card-1 card-2 card-2'
+  'card-3 card-3 card-4'
+  'card-5 card-6 card-7';
+  grid-template-columns: 380px 380px 380px;
+  grid-template-rows: 380px 380px 380px;
+}
+
+
+.border {
+  width: 32px;
+  border: solid 3px;
+  margin: 31px 0 38px 5px;
+}
+
+
+.portfolio-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+
+.portfolio-pagination img {
+  width: 8px;
+  height: 16px;
+  margin: 0 42px;
+}
+
+
+.portfolio-pagination p {
+  margin: 0 18px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.portfolio-pagination .selected {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-yellow);
+}
 
