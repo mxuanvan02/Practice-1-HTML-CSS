@@ -1,6 +1,9 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-family: 'Lucida Grande';
+  src: url(../fonts/Lucida-Grande-Regular/Lucida-Grande-Regular.ttf);
+
 }
 
 
@@ -14,6 +17,11 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 48px;
 }
 
 
@@ -44,7 +52,7 @@ header {
   left: 0;
   height: 768px;
   width: 1440px;
-  background: #000;
+  background: var(--color-black);
   opacity: 0.5;
   mix-blend-mode: normal;
 }
@@ -117,7 +125,7 @@ header {
   position: absolute;
   width: 24px;
   height: 24px;
-  background: #000;
+  background: var(--color-black);
 }
 
 
@@ -134,8 +142,6 @@ header {
   left: 410px;
   font-style: normal;
   font-weight: normal;
-  font-size: 44px;
-  line-height: 48px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -208,7 +214,6 @@ header {
 
 
 .features-title-name {
-  font-size: 44px;
   margin: 0 100px;
 }
 
@@ -296,8 +301,6 @@ header {
 
 
 .download-content-title {
-  font-size: 44px;
-  line-height: 48px;
   margin-bottom: 20px;
 }
 
@@ -318,6 +321,151 @@ header {
   border-radius: 50px;
   justify-content: center;
 }
+
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION TESTIMONIALS
+\* ---------------------------------------------------------------------- */
+.testimonials {
+  position: absolute;
+  width: 1440px;
+  height: 876px;
+  left: 0;
+  top: 2124px;
+  background: var(--color-white);
+}
+
+
+.testimonials-title {
+  margin: 72px 0 28px 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.testimonials-card {
+  margin: 0 152px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 55% 55%;
+  grid-template-rows: 50% 50%;
+}
+
+
+.testimonials-card-item {
+  display: flex;
+  width: 514px;
+  height: 283px;
+  padding: 40px;
+}
+
+
+.testimonials-card-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+
+.testimonials-card-item > img {
+  width: 96px;
+  height: 96px;
+}
+
+
+.testimonials-card-item-content {
+  margin: -13px 0px 0 28px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.testimonials-card-item-content-about {
+  margin-right: 70px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: solid #f6f6f6;
+}
+
+
+.testimonials-card-item-content-description {
+  margin: 0 40px 24px 0;
+}
+
+
+.testimonials-card-item-content-contact img {
+  margin-right: 10px;
+}
+
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION PRICING
+\* ---------------------------------------------------------------------- */
+.pricing {
+  position: absolute;
+  top: 3000px;
+  width: 1440px;
+  height: 680px;
+  left: 0;
+  background: #f6f6f6;
+}
+
+
+.pricing-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 68px;
+}
+
+
+.plan {
+  display: flex;
+  justify-content: center;
+}
+
+
+.plan-item {
+  width: 270px;
+  height: 396px;
+}
+
+
+.silver-plan-overlay {
+  background: linear-gradient(224.09deg, rgba(255, 255, 255, .7) 5.13%, rgba(255, 255, 255, .00007) 90.88%);
+  background-blend-mode: soft-light;
+  border-radius: 8px;
+  width: 270px;
+  height: 396px;
+}
+
+
+.silver-plan {
+  width: 270px;
+  height: 396px;
+  background: #4B4B4B;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+  
+}
+
+
+.gold-plan {}
+
+
+.platinum-plan {}
+
+
+.plan-item-title {
+  font-family: 'Lucida Grande';
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+
 
 
 
