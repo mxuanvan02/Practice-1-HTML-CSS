@@ -3,7 +3,8 @@
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
   font-family: 'Lucida Grande';
   src: url(../fonts/Lucida-Grande-Regular/Lucida-Grande-Regular.ttf);
-
+  font-weight: 400;
+  font-size: 16px;
 }
 
 
@@ -65,7 +66,9 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 48px;
+  padding-right: 150px;
 }
 
 
@@ -78,8 +81,8 @@ header {
 
 
 .nav-bar {
-  display: flex;
-  margin-left: 279px;
+  /* display: flex; */
+  margin-left: 209px;
 }
 
 
@@ -98,7 +101,6 @@ header {
 
 .header-socials {
   display: flex;
-  margin-left: 98px;
 }
 
 
@@ -157,12 +159,14 @@ header {
 
 .features {
   background: var(--color-white);
+  padding-top: 80px;
+  padding-bottom: 59px;
 }
 
 
 .features-title {
   text-align: center;
-  margin: 80px 526px;
+  /* margin: 80px 526px; */
   color: var(--color-cstom);
 }
 
@@ -217,6 +221,7 @@ header {
 .pixel-perfect-content-description,
 .organized-layers-content-description {
   margin: 10px 10px 30px 10px;
+  text-overflow: ellipsis;
 }
 
 
@@ -270,6 +275,13 @@ header {
   margin: 0 auto;
   border-radius: 50px;
   justify-content: center;
+}
+
+
+.download-button:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: var(--color-yellow-hover);
+  border-color: var(--color-yellow-hover);
 }
 
 
@@ -330,6 +342,7 @@ header {
 
 .testimonials-card-item-content-description {
   margin: 0 40px 24px 0;
+  text-overflow: ellipsis;
 }
 
 
@@ -391,6 +404,7 @@ header {
   background: var(--color-yellow);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  color: var(--color-black-gray);
 }
 
 
@@ -432,7 +446,7 @@ header {
 
 
 .gold-plan .plan-item-title {
-  color: var(--color-black);
+  color: var(--color-black-gray);
 }
 
 
@@ -452,7 +466,8 @@ header {
 
 
 .plan-item-description {
-  margin: 0;
+  margin: 5px 0;
+  text-overflow: ellipsis;
 }
 
 
@@ -462,21 +477,21 @@ header {
   width: 198px;
   height: 48px;
   background: var(--color-yellow);
-  border-color: var(--color-yellow);
+  border: solid var(--color-yellow);
 }
 
 
 .plan-item-purchase:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   background: var(--color-yellow-hover);
-  border-color: var(--color-yellow-hover);
+  border: solid var(--color-yellow-hover);
 }
 
 
 .gold-plan .plan-item-purchase {
   color: var(--color-white);
   background: var(--color-black-gray);
-  border-color: var(--color-black-gray);
+  border: solid var(--color-black-gray);
 }
 
 
@@ -679,16 +694,16 @@ header {
 
 .team {
   height: 590px;
-  background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png);
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png) no-repeat;
   background-blend-mode: multiply, normal;
+  padding-right: 140px;
+  padding-left: 832px;
 }
 
 
 .team-content {
   display: flex;
   padding-top: 180px;
-  margin-left: 832px;
-  margin-right: 149px;
 }
 
 
@@ -750,7 +765,7 @@ header {
 
 .contact {
   max-width: 1440px;
-  height: 864px;
+  height: 864;
   margin: 0 auto;
 }
 
@@ -770,12 +785,14 @@ header {
 .contact-content-image {
   background: url(../images/contact/iphoneapp.png) no-repeat;
   width: 314px;
-  height: 485px;
+  height: 350px;
 }
 
 
 .contact-content-form {
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -813,6 +830,13 @@ header {
 }
 
 
+.form-submit:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background: var(--color-yellow-hover);
+  border-color: var(--color-yellow-hover);
+}
+
+
 .contact-content-information {
   margin-right: 171px;
   width: 250px;
@@ -825,14 +849,18 @@ header {
 }
 
 
-.information-address {
-
-}
+.information-address {}
 
 
 .information-mail img {
-  margin-top: 22px;
+  margin-top: 6px;
   margin-right: 10px;
+}
+
+
+.information-mail a {
+  margin-top: 0;
+  color: var(--color-black);
 }
 
 
@@ -864,3 +892,83 @@ header {
 .tooltip p {
   margin: 0;
 }
+
+
+/* ---------------------------------------------------------------------- *\
+                              #FOOTER
+\* ---------------------------------------------------------------------- */
+
+
+footer {
+  height: 374px;
+  background: var(--color-black-gray);
+  color: var(--color-white);
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.footer-content {
+  margin: 38px 316px 0 151px;
+  width: 262px;
+}
+
+
+.footer-content-title {
+  color: var(--color-yellow);
+  font-size: 36px;
+  margin: 0;
+  margin-left: 12px;
+}
+
+
+.subcribe {
+  display: flex;
+}
+
+
+.subcribe-email-form {
+  width: 211px;
+  height: 48px;
+  padding-left: 18px;
+  background: var(--color-black-gray);
+  border: 1px solid var(--color-border-gray);
+}
+
+
+.footer-nav {
+  margin-top: 69px;
+}
+
+
+.footer-nav-follow-us {
+  margin-left: 235px;
+  width: 331px;
+}
+
+
+.footer-nav-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer ul {
+  display: flex;
+}
+
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 121px;
+}
+
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
