@@ -1,0 +1,19 @@
+ul {
+  display: block;
+}
+
+
+li {
+  display: block;
+  margin: 0;
+}
+
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
