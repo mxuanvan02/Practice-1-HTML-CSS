@@ -8,8 +8,8 @@
 
 
 :root {
-  --color-white: #fff;
-  --color-black: #000;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-black-hover: rgb(55, 51, 51);
   --color-black-gray: #4b4b4b;
   --color-yellow: #EBCB80;
@@ -677,3 +677,69 @@ header {
   color: var(--color-yellow);
 }
 
+
+/* ---------------------------------------------------------------------- *\
+                              #SECTION TEAM
+\* ---------------------------------------------------------------------- */
+
+
+.team {
+  max-width: 1440px;
+  height: 590px;
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(../images/team/background.png);
+  background-blend-mode: multiply, normal;
+}
+
+
+.team-content {
+  display: flex;
+  padding-top: 180px;
+  margin-left: 832px;
+  margin-right: 149px;
+}
+
+
+.person {
+  color: var(--color-white);
+  margin-right: 89px;
+}
+
+
+.person-name {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+
+.person-job {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 7px;
+  margin-bottom: 22px;
+}
+
+
+.person-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.vertical-dotnav {
+  margin-top: 160px;
+}
+
+
+.dot {
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  border-radius: 7.5px;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 12px;
+}
+
+
+.dot-active {
+  background: var(--color-white);
+}
